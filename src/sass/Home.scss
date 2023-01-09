@@ -1,0 +1,53 @@
+.main {
+    // background-color: #5E17EB;
+    background-image: url('../img/nettoyage-vitres.jpg');
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+
+    .title-wrapper {
+        position: relative;
+        height: 100%;
+        padding-top: 5vh;
+
+        .title-main {
+        color: white;
+        // color: #54AD3F;
+        display: flex;
+        flex-direction: column;
+ 
+        }
+
+        .btn-wrapper {
+            position: absolute;
+            bottom: 10vh;
+            right: 0;
+            left: 0;
+            
+            .btn-home {
+            padding: 15px 40px;
+            background-color: #5E17EB;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+        }
+        }
+        
+
+
+    }
+
+    
+
+    
+}
+
+.bg-main {
+    margin: 0 10vw;
+    position: absolute;
+    bottom: 0;
+    img {
+        width: 100%;
+        width: fit-content;
+    }
+}

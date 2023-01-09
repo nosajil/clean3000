@@ -1,0 +1,35 @@
+.form-page-wrapper {
+
+    height: 80vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-form {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+
+    .input-form {
+        width: 100%;
+        margin: 10px auto 20px auto ;
+    }
+
+    .btn-form {
+        padding: 15px 0px;
+        width: 100%;
+        background-color: #5E17EB;
+        text-decoration: none;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        
+    }
+}
