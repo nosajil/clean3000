@@ -81,9 +81,9 @@ const FormPage = () => {
                 </label>
 
                 <label>Observations:
-                <input
+                <textarea
                 type="text"
-                size={10}
+                cols="20" rows="4"
                 className='input-form input-comment' 
                 onChange={(e) => setComment(e.target.value)}
                 value={comment}

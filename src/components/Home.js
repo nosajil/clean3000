@@ -10,9 +10,7 @@ const Home = () => {
             <div className="btn-wrapper">
                 <a className='btn-home' href="#FormPage">Remplir l'avis de passage</a>
             </div>
-        </div>
-        <div className="bg-main">
-            {/* <img src={`${process.env.PUBLIC_URL}/img/lavage-vitre-bg.png`} alt="clean3000-background" /> */}
+            <div className="bg-home"/>
         </div>
     </div>
   )

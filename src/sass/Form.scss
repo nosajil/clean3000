@@ -42,6 +42,7 @@
     padding: 15px 0;
     color: white;
     font-family: 'garbata';
+    font-size: 2.5rem;
 }
 
 .title-form {
@@ -61,7 +62,7 @@
 .flex-form {
     height: 80vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -71,23 +72,28 @@
     width: 30vw;
 
     .input-form {
+        max-width: 100%;
+        min-width: 100%;
         width: 100%;
         margin: 10px auto 20px auto ;
-        padding: 10px 0;
+        padding: 10px 0 10px 20px;
         border-radius: 10px;
         border: 1px solid grey;
-        background-color: #5e17eb6e;
+        background-color: #5f19eb6e;
     }
 
     .btn-form {
-        padding: 15px 0px;
-        width: 100%;
+        padding: 15px 20px;
+        width: 105%;
         background-color: #5E17EB;
         text-decoration: none;
         color: white;
         border-radius: 10px;
         border: none;
         cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 700;
+
 
         &:hover {
             background-color: #3b1b7b;
@@ -124,7 +130,7 @@
         margin-bottom: 10vh;
         
         .input-comment {
-            padding: 50px 0;
+            padding: 50px 0 10px 20px;
         }
     }
 }
