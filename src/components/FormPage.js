@@ -31,6 +31,8 @@ const FormPage = () => {
 
         setAvis(copyAvis);
         setClient("")
+        setDate("")
+        setComment("")
     };
 
     const renderAvis = () => {
@@ -43,8 +45,8 @@ const FormPage = () => {
             );
         });
         return(
-            <div className="avis">
-                <h2>Les avis de passage</h2>
+            <div className="avis-section">
+                <h2 className='title-avis-section'>Les avis de passage</h2>
                 {ListAvis}
             </div>
         )
@@ -57,10 +59,10 @@ const FormPage = () => {
                 <img src={`${process.env.PUBLIC_URL}/img/nettoyagevitre.webp`} alt="logo-clean3000" />
             </div>
             <div className="form-wrapper">
-                <h2>Avis de passage</h2>
+                <h2 className='title-form'>Avis de passage</h2>
 
-                <label htmlFor="">Nom de l'entreprise/ou client :
-                <input 
+                <label>Nom de l'entreprise/ou client :
+                <input
                 type="text"
                 className='input-form' 
                 onChange={(e) => setClient(e.target.value)}
@@ -69,8 +71,8 @@ const FormPage = () => {
                 </label>
                 
 
-                <label htmlFor="">Notre technicien est intervenu pour l'entretien de la vitrerie le :
-                <input 
+                <label>Notre technicien est intervenu pour l'entretien de la vitrerie le :
+                <input
                 type="date"
                 className='input-form' 
                 onChange={(e) => setDate(e.target.value)}
@@ -78,10 +80,11 @@ const FormPage = () => {
                 />
                 </label>
 
-                <label htmlFor="">Observations:
-                <input 
+                <label>Observations:
+                <input
                 type="text"
-                className='input-form' 
+                size={10}
+                className='input-form input-comment' 
                 onChange={(e) => setComment(e.target.value)}
                 value={comment}
                 />
@@ -96,7 +99,7 @@ const FormPage = () => {
                 </div>
             </div>
         </div>
-        <div className="liste-avis-wrapper">
+        <div className="liste-avis-wrapper container">
             {renderAvis()}
         </div>
     </div>

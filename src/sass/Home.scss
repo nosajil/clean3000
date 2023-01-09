@@ -4,6 +4,7 @@
     background-size: cover;
     height: 80vh;
     position: relative;
+    margin-bottom: 10px;
 
     .title-wrapper {
         position: relative;
@@ -30,6 +31,11 @@
             text-decoration: none;
             color: white;
             border-radius: 10px;
+
+            &:hover {
+                background-color: #3b1b7b;
+                transition: all ease 0.3s;
+            }
         }
         }
         

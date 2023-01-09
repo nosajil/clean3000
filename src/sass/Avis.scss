@@ -1,0 +1,51 @@
+.container {
+    width: 90vw;
+    margin: 20px auto ;
+}
+
+.avis {
+    background-color: rgb(158, 158, 158);
+    
+}
+.info-avis {
+    // display: flex;
+    .part1 {
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+            margin: 0;
+            font-style: italic;
+        }
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+
+
+
+    .part{
+        display: flex;
+        margin: 0 20px;
+    
+        .margin {
+            margin-right: 40px;
+        }
+
+        .bold {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .part2 {
+        flex-direction: column;
+        align-items: flex-start;
+
+        p{
+            margin-top: 10px;
+        }
+    }
+}

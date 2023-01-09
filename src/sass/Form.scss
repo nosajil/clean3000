@@ -1,3 +1,56 @@
+@font-face {
+    font-family: "garbata-bold";
+    src: 
+    url('../fonts/garbata/GarbataTrial-Bold.woff');
+}
+
+@font-face {
+    font-family: "garbata-extra-bold";
+    src: 
+    url('../fonts/garbata/GarbataTrial-Extrabold.woff');
+}
+
+@font-face {
+    font-family: "garbata";
+    src: 
+    url('../fonts/garbata/GarbataTrial-Regular.woff');
+}
+
+.container {
+    width: 90vw;
+}
+
+.image-form-page {
+    height: 400px;
+    overflow: hidden;
+    min-width: 500px;
+
+    img {
+        height: 100%;
+        width: 40vw;
+        min-width: 500px;
+        border-radius: 30px;
+    }
+}
+
+.avis-section {
+    padding-bottom: 10vh;
+}
+
+.title-avis-section {
+    background-color:#5E17EB;
+    padding: 15px 0;
+    color: white;
+    font-family: 'garbata';
+}
+
+.title-form {
+    font-family: 'garbata-extra-bold';
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
 .form-page-wrapper {
 
     height: 80vh;
@@ -20,6 +73,10 @@
     .input-form {
         width: 100%;
         margin: 10px auto 20px auto ;
+        padding: 10px 0;
+        border-radius: 10px;
+        border: 1px solid grey;
+        background-color: #5e17eb6e;
     }
 
     .btn-form {
@@ -30,6 +87,44 @@
         color: white;
         border-radius: 10px;
         border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #3b1b7b;
+            transition: all ease 0.3s;
+        }
         
+    }
+
+    // .liste-avis-wrapper {
+    //     padding-bottom: 20vh;
+    // }
+}
+
+@media screen and (max-width: 990px) {
+    .flex-form {
+        flex-direction: column;
+        height: 120vh;
+
+        .image-form-page {
+            margin: 0;
+            width: 80vw;
+            
+
+            img {
+                width: 100%;
+                min-height: 400px;
+            }
+        }
+    }
+
+    .form-wrapper {
+        width: 70vw;
+        margin: 5vh;
+        margin-bottom: 10vh;
+        
+        .input-comment {
+            padding: 50px 0;
+        }
     }
 }
